@@ -337,22 +337,9 @@ This package depends on the following packages:
 The following steps are required to build the project, and will install the
 dependencies above:
 
-1. Install the Chromium depot tools
+1.Depends upon chromium depot tools, it has added as submodule in the parent git
 
-   ```sh
-   pushd ..
-   git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
-   export PATH=$PATH:`realpath depot_tools`
-   popd
-   ```
-2. Download WebRTC
-
-   ```sh
-   mkdir ../webrtc
-   pushd ../webrtc
-   fetch --no-history webrtc 
-   popd
-   ```
+2.init_script.sh do the necessary configurations and will fetch webrtc source file
 
 3. Build WebRTC Streamer
 
